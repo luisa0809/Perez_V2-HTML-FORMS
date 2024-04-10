@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maria's Cuisine</title>
+  <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="information-form-header">
+            <h1>
+                Maria's Cuisine
+            </h1>
+            <p>
+                <em>
+                     " Hungry? Don't worry, we are here to serve you! "
+                </em>
+            </p>
+        </header>
+  
+    <style>
+    
+
+    .form-container {
+      background-color: rgba(223, 214, 214, 0.5);
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 200px;
+      margin-bottom: 20px;
+    }
+
+    .logo-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      width: 500%; 
+      max-width: 200px; 
+      height: auto; 
+    }
+
+    .information-form-header {
+      background-color:rgba(223, 214, 214, 0.5);
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      margin: 20px auto; 
+      padding: 50px;
+      text-align: center;
+      font-family: 'Arial', Times, serif;
+      font-size: x-large;
+    }
+
+    .header-class {
+      text-align: center;
+    }
+
+    body {
+      background: linear-gradient(to left, #2b8ac2, #1d5adb, #1ad5e2);
+      font-family: Arial, sans-serif;
+    }
+
+    .form-container {
+      background-color:rgba(223, 214, 214, 0.5);
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      margin: 20px auto; 
+      padding: 50px;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+    }
+
+    .dropdown-toggle {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+      cursor: pointer;
+      font-size: 14px;
+      text-align: left;
+    }
+
+    .dropdown-toggle::after {
+      content: '\25BE';
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+    }
+
+    .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    z-index: 1; /* Add this line */
+  }
+    .menu-item {
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .menu-item:hover {
+      background-color: #f2f2f2;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    button[type="submit"],
+    button[type="button"] {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #333;
+      color: #fff;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover,
+    button[type="button"]:hover {
+      background-color: #666
+    }
+
+    input[type="text"]#name {
+    font-size: 12px; /* Updated font size */
+    padding: 8px;
+}
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo" class="logo">
+    </div>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" required>
+      </div>
+      <div class="form-group">
+        <label for="cuisine">Type of Cuisine</label>
+        <div class="dropdown">
+          <button class="dropdown-toggle">Select Cuisine</button>
+          <ul class="menu">
+            <li class="menu-item">Italian</li>
+            <li class="menu-item">Chinese</li>
+            <li class="menu-item">Indian</li>
+            <li class="menu-item">Korean</li>
+            <li class="menu-item">Mexican</li>
+          </ul>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="payment">Mode of Payment</label>
+        <div class="dropdown">
+          <button class="dropdown-toggle">Select Payment</button>
+          <ul class = "menu">
+            <li class="menu-item">cash</li>
+            <li class="menu-item">credit card</li>
+            <li class="menu-item">online payment</li>
+            </ul>
+            </div>
+            <div class="form-group">
+                <label for="comments">Comments/Instruction</label>
+                <textarea id="comments" name="comments"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Order Placed</button>
+                <button type="button">Cancel</button>
+            </div>
+        </form>
+        </div>
+        <script src="script.js"></script>
+        </body>
+        </html>
